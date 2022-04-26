@@ -18,7 +18,7 @@ rockPaperScissor()
 function checkWin() {
 
     let botChoice = rockPaperScissor()
-    let playerChoice = document.querySelector("input").value
+    let playerChoice = document.querySelector("input").value.toLowerCase()
     if((playerChoice === "rock" && botChoice === "scissors") || (playerChoice === "paper" && botChoice === "rock") ||  (playerChoice === "scissors" && botChoice === "paper")) {
         document.querySelector("#here").innerText = `Player entered ${playerChoice} and computer entered ${botChoice} so 
 PLAYER WINS!!!`;
