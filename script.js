@@ -9,7 +9,7 @@ function rockPaperScissor() {
     } else if (random <= .66) {
         return "paper"
     } else {
-        return "scissor"
+        return "scissors"
     }
 }
 rockPaperScissor()
